@@ -1,0 +1,66 @@
+body {
+    color: #3e3e3e;
+    background-color: lightgray;
+}
+
+body * {
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt !important;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header .highlight {
+    text-decoration: underline;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h2:has(~ p) {
+    margin: 0;
+    padding: 0;
+}
+
+.outline-text-2,
+.outline-text-2 p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    margin-left: 1.25em;
+}
+
+.outline-text-2::before {
+    margin: 0;
+    padding: 0;
+    content: " \2013 "; /* Content can't use html entities, this is escaped unicode for en dash */
+}
+
+@page {
+    size: 8.5in 11in;
+
+    margin-top: 0.5in;
+    margin-bottom: 0.5in;
+    margin-left: 0.25in;
+    margin-right: 0.25in;
+}
